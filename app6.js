@@ -28,3 +28,4 @@ var newArray3 = array.map(function (digits) {
     return digits.length
 })
 console.log(newArray3)
+////some
