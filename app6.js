@@ -23,7 +23,8 @@ var newArray2 = array.reduce(function (prevValue, nextValue,index,array) {
     return prevValue + ' ' + nextValue
 })
 console.log(newArray2)
-//////////////////////////////////////////////
-array.map(function (digits) {
-    console.log(digits.number)
+////////////////////////////////////////////////
+var newArray3 = array.map(function (digits) {
+    return digits.length
 })
+console.log(newArray3)
