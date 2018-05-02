@@ -67,10 +67,11 @@ function forEachItem(item) {
     console.log(item)
 }
 function funcForEach(arrData, callback){
+    var result = '';
     for(var i = 0; i < arrData.length;i++){
         callback(arrData[i])
     }
-    // return
+    return result
 }
 console.log(funcForEach(array, forEachItem))
 /////////////////////////////////////////////
@@ -103,9 +104,10 @@ function reduceItem(itemOne, itemTwo) {
     return (itemOne + ' ' + itemTwo)
 }
 function funcReduce(arrData, callback) {
-    var result ;
+    var result = [];
     for(var i = 0; i < arrData.length;i++){
         result = (callback(result, arrData[i]))
-    }return result
+    } result = result.split(', ')
+    return result
 }
 console.log(funcReduce(array, reduceItem))
